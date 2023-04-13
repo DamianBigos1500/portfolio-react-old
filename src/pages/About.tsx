@@ -1,17 +1,18 @@
 import { FC } from 'react';
 import Layout from '../components/Layout';
 import AnimatedText from '../components/AnimatedText';
-import Skills from '../components/Skills';
-import Experience from '../components/Experience';
 
 interface AboutProps {}
 
 const About: FC<AboutProps> = ({}) => {
   return (
-    <main className="flex w-full flex-col items-center justify-center">
-      <Layout className="pt-16">
+    <section
+      id="about"
+      className="flex w-full flex-col items-center justify-center"
+    >
+      <Layout className="mt-48">
         <AnimatedText className={'mb-16'} text={'Passion Fuel Purpose'} />
-        <div className="grid w-full  grid-cols-8 gap-16">
+        <div className="grid w-full  grid-cols-6 gap-16">
           <div className="col-span-3 flex  flex-col items-start justify-start">
             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
               Biography
@@ -46,19 +47,9 @@ const About: FC<AboutProps> = ({}) => {
               className="w-full h-auto rounded-2xl"
             />
           </div>
-
-          <div>
-            <div>
-              <span>50+</span>
-              <h2>satisfied client</h2>
-            </div>
-          </div>
         </div>
-
-        {/* <Skills /> */}
-        <Experience />
       </Layout>
-    </main>
+    </section>
   );
 };
 

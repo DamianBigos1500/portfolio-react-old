@@ -1,18 +1,22 @@
-import NavBar from './components/NavBar';
 import Home from './pages/Home';
-import Footer from './components/Footer';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import RootLayout from './components/RootLayout';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+    ],
+  },
+]);
 
 function App() {
-
-  return (
-    <main className="font-mont bg-light w-full min-h-screen">
-      <NavBar />
-      <Projects />
-      <Footer />
-    </main>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

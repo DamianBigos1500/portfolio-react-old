@@ -11,14 +11,14 @@ const Logo: FC<LogoProps> = ({}) => {
     <div className="flex items-center justify-center mt-2">
       <MotionLink
         to={'/'}
-        className=" bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold"
+        className=" bg-light text-dark flex items-center justify-center rounded-full text-2xl font-bold p-2"
         whileHover={{
           backgroundColor: [
-            '#121212',
+            '#e8e8e8',
             'rgba(131,58,180,1)',
             'rgba(253,29,29,1)',
             'rgba(131,58,180,1)',
-            '#121212',
+            '#e8e8e8',
           ],
           transition: { duration: 1, repeat: Infinity },
         }}
