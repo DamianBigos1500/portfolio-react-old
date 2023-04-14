@@ -9,7 +9,7 @@ const About: FC<AboutProps> = ({}) => {
   return (
     <section
       id="about"
-      className="flex w-full md:h-screen h-auto flex-col items-center justify-center"
+      className="flex min-h-screen flex-col items-center justify-center"
     >
       <Layout className="mt-48">
         <AnimatedText

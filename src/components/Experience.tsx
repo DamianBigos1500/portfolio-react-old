@@ -66,7 +66,7 @@ const Experience: FC<ExperienceProps> = ({}) => {
   return (
     <section
       id="school"
-      className="w-full flex flex-col items-center justify-center"
+      className="w-full min-h-screen flex flex-col items-center justify-center"
     >
       <Layout className="mt-48">
         <div>
