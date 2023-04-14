@@ -13,6 +13,7 @@ const useTheme = () => {
     const handleChange = () => {
       if (userPref) {
         let check = userPref === 'dark' ? 'dark' : 'light';
+        console.log(check)
 
         setMode(check);
 
@@ -22,6 +23,7 @@ const useTheme = () => {
           document.documentElement.classList.remove('dark');
         }
       } else {
+        console.log('here')
         let check = mediaQuery.matches ? 'dark' : 'light';
         setMode(check);
 
@@ -41,6 +43,7 @@ const useTheme = () => {
   }, []);
 
   useEffect(() => {
+    console.log(mode)
     if (mode === 'dark') {
       window.localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');

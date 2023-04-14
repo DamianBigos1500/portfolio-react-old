@@ -79,7 +79,7 @@ const NavBar: FC<NavBarProps> = ({}) => {
               console.log(mode);
             }}
           >
-            {mode === 'dark' ? <span>Dark</span> : <span>Light</span>}
+            {mode === 'dark' ? <Icons.SunIcon /> : <Icons.MoonIcon />}
           </button>
         </nav>
       </div>
