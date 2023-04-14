@@ -76,7 +76,6 @@ const NavBar: FC<NavBarProps> = ({}) => {
           <button
             onClick={() => {
               setMode(mode == 'light' ? 'dark' : 'light');
-              console.log(mode);
             }}
           >
             {mode === 'dark' ? <Icons.SunIcon /> : <Icons.MoonIcon />}
