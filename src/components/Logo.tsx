@@ -2,23 +2,21 @@ import { FC } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-interface LogoProps {}
-
 const MotionLink = motion(Link);
 
-const Logo: FC<LogoProps> = ({}) => {
+const Logo: FC = () => {
   return (
-    <div className="flex items-center justify-center mt-2">
+    <div className="flex items-center justify-center absolute left-1/2 -translate-x-1/3">
       <MotionLink
         to={'/'}
-        className=" bg-light text-dark flex items-center justify-center rounded-full text-2xl font-bold p-2"
+        className=" bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold p-2 whitespace-nowrap"
         whileHover={{
           backgroundColor: [
-            '#e8e8e8',
+            'rgb(27 27 27)',
             'rgba(131,58,180,1)',
             'rgba(253,29,29,1)',
             'rgba(131,58,180,1)',
-            '#e8e8e8',
+            'rgb(27 27 27)',
           ],
           transition: { duration: 1, repeat: Infinity },
         }}
