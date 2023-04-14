@@ -5,8 +5,8 @@ import { Link as ScrollLink } from 'react-scroll';
 interface CustomLinkProps {
   to: string;
   title: string;
-  className: string;
-  offset: number;
+  className?: string;
+  offset?: number;
   duration?: number;
 }
 
@@ -14,7 +14,7 @@ const CustomLink: FC<CustomLinkProps> = ({
   to,
   title,
   className = '',
-  offset,
+  offset = 100,
   duration = 300,
 }) => {
   const location = useLocation();
@@ -42,7 +42,7 @@ export const CustomMobileLink: FC<CustomLinkProps> = ({
   to,
   title,
   className = '',
-  offset,
+  offset = 100,
   duration = 300,
 }) => {
   const location = useLocation();

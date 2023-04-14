@@ -7,6 +7,8 @@ import useTheme from '../hooks/useTheme';
 import CustomLink, { CustomMobileLink } from './CustomLink';
 import { useDimensions } from '../hooks/useDimension';
 import MobileNavigation from './MobileNavigation';
+import { INavigationLink, navigationLinks } from '../data/navigationLinks';
+import { IIconLink, iconLinks } from '../data/iconLinks';
 
 interface NavBarProps {}
 
@@ -42,53 +44,34 @@ const NavBar: FC<NavBarProps> = ({}) => {
       </button>
 
       <div className="w-full flex justify-between items-center lg:hidden relative">
-        <nav>
-          <CustomLink to="header" title="Home" className="mr-4" offset={-100} />
-          <CustomLink to="about" title="About" className="mx-4" offset={100} />
-          <CustomLink
-            to="school"
-            title="School"
-            className="mx-4"
-            offset={100}
-          />
-          <CustomLink
-            to="projects"
-            title="Projects"
-            className="ml-4"
-            offset={100}
-          />
+        <nav className="space-x-8">
+          {navigationLinks.map((link: INavigationLink, index: number) => {
+            return (
+              <CustomLink
+                key={index}
+                to={link.href}
+                title={link.name}
+                offset={100}
+              />
+            );
+          })}
         </nav>
 
-        <nav className="flex items-center justify-center ">
-          <motion.a
-            href="/"
-            target="_blank"
-            whileHover={{ y: -4 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mr-3 text-red-100"
-          >
-            <Icons.LinkedInIcon />
-          </motion.a>
-
-          <motion.a
-            href="/"
-            target="_blank"
-            whileHover={{ y: -4 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
-          >
-            <Icons.GithubIcon />
-          </motion.a>
-
-          <motion.a
-            href="/"
-            target="_blank"
-            whileHover={{ y: -4 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
-          >
-            <Icons.TwitterIcon />
-          </motion.a>
+        <nav className="flex items-center justify-center gap-6 ">
+          {iconLinks.map((iconLink: IIconLink, index: number) => {
+            return (
+              <motion.a
+                key={index}
+                href={iconLink.href}
+                target="_blank"
+                whileHover={{ y: -4 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 text-red-100"
+              >
+                {iconLink.icon}
+              </motion.a>
+            );
+          })}
 
           <button
             onClick={() => {

@@ -14,7 +14,7 @@ const Header: FC<HeaderProps> = ({}) => {
     >
       <Layout className="-mt-24">
         <div className="flex items-center justify-between w-full lg:flex-col">
-          <div className="w-1/2 pr-8 md:pr-0 md:pb-12 md:pt-32 md:w-full">
+          <div className="w-1/2 pr-8 md:pr-0 lg:pb-12 md:pt-32 lg:w-3/4">
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{
@@ -24,7 +24,7 @@ const Header: FC<HeaderProps> = ({}) => {
               viewport={{ once: true }}
               src="https://wallup.net/wp-content/uploads/2017/03/15/82295-stars-forest-trees.jpg"
               alt=""
-              className="w-full h-auto object-cover aspect-square rounded-3xl lg:hidden md:inline-block md:w-full"
+              className="w-full h-auto object-cover aspect-square rounded-3xl md:inline-block"
             />
           </div>
 
