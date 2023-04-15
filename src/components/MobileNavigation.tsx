@@ -31,7 +31,7 @@ export const MobileNavigation: FC<MobileNavigationProps> = ({
       </nav>
 
       <nav className="flex items-center justify-center mt-4 gap-6">
-        {iconLinks.map((iconLink:IIconLink, index: number) => {
+        {iconLinks.map((iconLink: IIconLink, index: number) => {
           return (
             <motion.a
               key={index}
@@ -49,10 +49,13 @@ export const MobileNavigation: FC<MobileNavigationProps> = ({
         <button
           onClick={() => {
             setMode(mode == 'light' ? 'dark' : 'light');
-            console.log(mode);
           }}
         >
-          {mode === 'dark' ? <span>Dark</span> : <span>Light</span>}
+          {mode === 'dark' ? (
+            <Icons.SunIcon fill="black" />
+          ) : (
+            <Icons.MoonIcon fill="white" />
+          )}
         </button>
       </nav>
     </motion.div>

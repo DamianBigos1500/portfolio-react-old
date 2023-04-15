@@ -30,7 +30,7 @@ const FeaturedProject: FC<FeaturedProjectProps> = ({
       />
       <Link
         to={link}
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <img src={img} alt="" className="w-full h-auto" />
       </Link>

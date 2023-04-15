@@ -9,14 +9,14 @@ export interface IIconLink {
 export const iconLinks = [
   {
     icon: <Icons.LinkedInIcon />,
-    href: '/',
+    href: 'https://www.linkedin.com/in/damian-bigos-99497b213/',
   },
   {
     icon: <Icons.GithubIcon />,
-    href: '/',
+    href: 'https://github.com/DamianBigos1500',
   },
   {
     icon: <Icons.TwitterIcon />,
-    href: '/',
+    href: 'https://twitter.com/BigosDamian',
   },
 ];

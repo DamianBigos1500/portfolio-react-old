@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import AnimatedText from '../components/AnimatedText';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { mailAddress } from '../data/mailAddress';
 
 interface HeaderProps {}
 
@@ -39,7 +40,7 @@ const Header: FC<HeaderProps> = ({}) => {
               initial={{ opacity: 0, x: 40 }}
               whileInView={{
                 opacity: 1,
-                transition: { duration: 0.3, delay: 0.5 },
+                transition: { duration: 0.3, delay: 0.3 },
                 x: 0,
               }}
               viewport={{ once: true }}
@@ -54,13 +55,13 @@ const Header: FC<HeaderProps> = ({}) => {
                 to=""
                 className="flex items-center bg-dark text-light p-2.5 px-6
           rounded-lg text-lg font-semobold hover:bg-light hover:text-dark
-          border-2 border-solid border-transparent hover:border-dark"
+          border-2 border-solid border-transparent hover:border-dark dark:border-light "
               >
                 Resume
               </Link>
               <Link
-                to="mailto:abcd@gmail.com"
-                className="ml-4 text-lg font-medium capitalize text-dark"
+                to={`mailto:${mailAddress}`}
+                className="ml-4 text-lg font-medium capitalize text-dark dark:text-light"
               >
                 Contact
               </Link>

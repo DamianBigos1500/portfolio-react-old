@@ -35,13 +35,13 @@ const Deltails: FC<DeltailsProps> = ({
         transition={{ duration: 0.5, type: 'spring' }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
-          {position}&nbsp;
+          {position}&nbsp;-&nbsp;
           <a
             href={companyLink}
             target="_blank"
             className="text-primary capitalize"
           >
-            @{company}
+            {company}
           </a>
         </h3>
         <span className="capitalize font-medium text-dark/75 xs:text-sm">
@@ -53,9 +53,9 @@ const Deltails: FC<DeltailsProps> = ({
   );
 };
 
-interface ExperienceProps {}
+interface SchoolsProps {}
 
-const Experience: FC<ExperienceProps> = ({}) => {
+const Schools: FC<SchoolsProps> = ({}) => {
   const ref = useRef<any>(null);
 
   const { scrollYProgress } = useScroll({
@@ -70,7 +70,10 @@ const Experience: FC<ExperienceProps> = ({}) => {
     >
       <Layout className="mt-48">
         <div>
-          <AnimatedText className="font-bold text-8xl mb-32 w-full text-center lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl" text={'Experience'} />
+          <AnimatedText
+            className="font-bold text-8xl mb-32 w-full text-center lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl"
+            text={'Experience'}
+          />
 
           <div
             className="w-[75%] mx-auto relative lg:w-[90%] md:w-full"
@@ -79,26 +82,15 @@ const Experience: FC<ExperienceProps> = ({}) => {
             <motion.div
               style={{ scaleY: scrollYProgress }}
               className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light
-              md:w-[2px] md:left-[30px] xs:left-[20px]
-              "
+              md:w-[2px] md:left-[30px] xs:left-[20px]"
             />
             <ul className="w-full flex flex-col items-start justify-between ml-4 xl:ml-2">
               <Deltails
-                position={'Soft eng'}
-                company={'Google'}
-                companyLink={'www.google.com'}
-                time={'2022-Present'}
-                address={'Mountain View, CA'}
-                work={
-                  "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-                }
-              />
-              <Deltails
-                position={'Soft eng'}
-                company={'Google'}
-                companyLink={'www.google.com'}
-                time={'2022-Present'}
-                address={'Mountain View, CA'}
+                position={'Applied Mathematics'}
+                company={'AGH University of Science and Technology'}
+                companyLink={'https://www.agh.edu.pl/en/'}
+                time={'2021 - Present'}
+                address={'30 Mickiewicza Ave. 30-059 Krakow'}
                 work={
                   "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
                 }
@@ -121,4 +113,4 @@ const Experience: FC<ExperienceProps> = ({}) => {
   );
 };
 
-export default Experience;
+export default Schools;

@@ -25,17 +25,15 @@ const Projects: FC<ProjectsProps> = ({}) => {
             whileInView={{
               opacity: 1,
               y: 0,
-              transition: { duration: 0.5, delay: 0.7 },
+              transition: { duration: 0.5, delay: 0.4 },
             }}
             viewport={{ once: true }}
             className="col-span-12"
           >
             <FeaturedProject
-              type={'Feature'}
-              title="React Portfolio Website"
-              summary="A professional portfolio website using React JS, Framer-motion,
-                and Styled-components. It has smooth page transitions, cool
-                background effects, unique design and it is mobile responsive."
+              type={'Ecommerce'}
+              title="Laravel - Next - Ecommerce"
+              summary="A ecommerce website I create to practice laravel and next js."
               img={
                 'https://images.musement.com/cover/0001/100/predator-v5-jpg_header-99107.jpeg'
               }
@@ -49,7 +47,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
             whileInView={{
               opacity: 1,
               x: 0,
-              transition: { duration: 0.5, delay: 0.7 },
+              transition: { duration: 0.5, delay: 0.4 },
             }}
             viewport={{ once: true }}
             className="col-span-6 sm:col-span-12"
@@ -70,7 +68,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
             whileInView={{
               opacity: 1,
               x: 0,
-              transition: { duration: 0.5, delay: 0.7 },
+              transition: { duration: 0.5, delay: 0.4 },
             }}
             viewport={{ once: true }}
             className="col-span-6 sm:col-span-12"

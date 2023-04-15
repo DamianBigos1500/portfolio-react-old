@@ -21,7 +21,7 @@ const About: FC<AboutProps> = ({}) => {
         <div className="grid w-full  grid-cols-6 gap-16 md:gap-12 sm:gap-8">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, transition: { delay: 0.5 }, x: 0 }}
+            whileInView={{ opacity: 1, transition: { delay: 0.3 }, x: 0 }}
             viewport={{ once: true }}
             className="col-span-3 flex  flex-col items-start justify-start md:order-2 xl:col-span-8"
           >
@@ -59,7 +59,7 @@ const About: FC<AboutProps> = ({}) => {
             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[105%] rounded-[2rem] bg-dark dark:bg-light" />
             <motion.img
               initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, transition: { delay: 0.5 }, x: 0 }}
+              whileInView={{ opacity: 1, transition: { delay: 0.3 }, x: 0 }}
               viewport={{ once: true }}
               src="https://theimageconference.org/wp-content/uploads/2019/11/vancouver_image_conference_2.jpg "
               className="w-full h-auto rounded-2xl"
