@@ -30,6 +30,8 @@ const Projects: FC<ProjectsProps> = ({}) => {
             viewport={{ once: true }}
             className="col-span-12"
           >
+
+            {/* ECOMMERCE */}
             <FeaturedProject
               type={'Ecommerce'}
               title="Laravel - Next - Ecommerce"
@@ -37,8 +39,10 @@ const Projects: FC<ProjectsProps> = ({}) => {
               img={
                 'https://images.musement.com/cover/0001/100/predator-v5-jpg_header-99107.jpeg'
               }
-              link={'/'}
-              github={'/'}
+              link={'https://project-shop-laravel-client.vercel.app/'}
+              github={
+                'https://github.com/DamianBigos1500/project-shop-laravel-client'
+              }
             />
           </motion.div>
 
@@ -52,14 +56,15 @@ const Projects: FC<ProjectsProps> = ({}) => {
             viewport={{ once: true }}
             className="col-span-6 sm:col-span-12"
           >
+            {/* blog */}
             <Project
-              type={'Feature'}
-              title="React Portfolio Website"
+              type={'MDX Blog'}
+              title="Next.js, prisma Blog"
               img={
                 'https://images.musement.com/cover/0001/100/predator-v5-jpg_header-99107.jpeg'
               }
-              link={'/'}
-              github={'/'}
+              link={'https://mdx-blog-next-js-13.vercel.app/'}
+              github={'https://github.com/DamianBigos1500/mdx-blog-next-js-13'}
             />
           </motion.div>
 
@@ -74,13 +79,13 @@ const Projects: FC<ProjectsProps> = ({}) => {
             className="col-span-6 sm:col-span-12"
           >
             <Project
-              type={'Feature'}
+              type={'Portfolio (static page)'}
               title="React Portfolio Website"
               img={
                 'https://images.musement.com/cover/0001/100/predator-v5-jpg_header-99107.jpeg'
               }
-              link={'/'}
-              github={'/'}
+              link={'https://portfolio-react-beige-omega.vercel.app/'}
+              github={'https://github.com/DamianBigos1500/portfolio-react'}
             />
           </motion.div>
         </div>

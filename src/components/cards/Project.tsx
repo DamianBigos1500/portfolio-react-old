@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import Icons from '../Icons';
 
 interface ProjectProps {}
 
@@ -30,18 +31,26 @@ const Project: FC<ProjectProps> = ({ type, title, img, link, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
+          {type}
+        </span>
         <Link to={link} className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
 
         <div className="w-full my-2 flex items-center justify-between">
-          <Link to={link} target="_blank" className="text-lg font-semibold underline md:text-base">
+          <Link
+            to={link}
+            target="_blank"
+            className="text-lg font-semibold underline md:text-base"
+          >
             Visit Project
           </Link>
 
           <Link to={github} target="_blank" className="w-8 md:w-6">
-            G
+            <Icons.GithubIcon fill="dark:white" />
           </Link>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import Icons from '../Icons';
 
 interface FeaturedProjectProps {
   type: string;
@@ -49,7 +50,7 @@ const FeaturedProject: FC<FeaturedProjectProps> = ({
 
         <div className="my-2 flex items-center">
           <Link to={github} target="_blank" className="w-10">
-            G
+            <Icons.GithubIcon fill='dark:white' />
           </Link>
           <Link
             to={link}

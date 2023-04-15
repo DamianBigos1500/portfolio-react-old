@@ -72,7 +72,7 @@ const Schools: FC<SchoolsProps> = ({}) => {
         <div>
           <AnimatedText
             className="font-bold text-8xl mb-32 w-full text-center lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl"
-            text={'Experience'}
+            text={'Schools'}
           />
 
           <div
