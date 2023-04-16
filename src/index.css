@@ -5,9 +5,14 @@
 @tailwind utilities;
 
 .text-shadow-light {
-  text-shadow: #ca4ce6 5px 5px;
+  text-shadow: #e679ff 5px 5px;
 }
 
-.text-shadow-dark {
-  text-shadow: #3ee2d4 1px 2px;
+[class='dark'] .text-shadow-light {
+  text-shadow: #3ee2d4 4px 2px;
+}
+
+.image-faded {
+  display: block;
+  position: relative;
 }

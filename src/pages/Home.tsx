@@ -2,7 +2,8 @@ import { FC } from 'react';
 import Header from './Header';
 import About from './About';
 import Projects from './Projects';
-import Schools from '../components/Schools';
+import Schools from './Schools';
+import Skills from './Skills';
 
 interface HomeProps {}
 
@@ -11,6 +12,7 @@ const Home: FC<HomeProps> = () => {
     <>
       <Header />
       <About />
+      <Skills />
       <Schools />
       <Projects />
     </>

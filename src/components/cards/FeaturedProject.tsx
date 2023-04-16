@@ -46,11 +46,13 @@ const FeaturedProject: FC<FeaturedProjectProps> = ({
           </h2>
         </Link>
 
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
 
         <div className="my-2 flex items-center">
           <Link to={github} target="_blank" className="w-10">
-            <Icons.GithubIcon fill='dark:white' />
+            <Icons.GithubIcon fill="dark:white" />
           </Link>
           <Link
             to={link}

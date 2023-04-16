@@ -15,7 +15,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
     >
       <Layout className="pt-48">
         <AnimatedText
-          text="Imagination Trumps Knowledge!"
+          text="My recent projects!"
           className="mb-16 lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-4xl"
         />
 
@@ -30,7 +30,6 @@ const Projects: FC<ProjectsProps> = ({}) => {
             viewport={{ once: true }}
             className="col-span-12"
           >
-
             {/* ECOMMERCE */}
             <FeaturedProject
               type={'Ecommerce'}
@@ -60,9 +59,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
             <Project
               type={'MDX Blog'}
               title="Next.js, prisma Blog"
-              img={
-                'https://images.musement.com/cover/0001/100/predator-v5-jpg_header-99107.jpeg'
-              }
+              img={'/Zrzut ekranu 2023-04-16 130235.png'}
               link={'https://mdx-blog-next-js-13.vercel.app/'}
               github={'https://github.com/DamianBigos1500/mdx-blog-next-js-13'}
             />
@@ -79,11 +76,9 @@ const Projects: FC<ProjectsProps> = ({}) => {
             className="col-span-6 sm:col-span-12"
           >
             <Project
-              type={'Portfolio (static page)'}
+              type={'Portfolio (this page)'}
               title="React Portfolio Website"
-              img={
-                'https://images.musement.com/cover/0001/100/predator-v5-jpg_header-99107.jpeg'
-              }
+              img={'/Zrzut ekranu 2023-04-16 125034.png'}
               link={'https://portfolio-react-beige-omega.vercel.app/'}
               github={'https://github.com/DamianBigos1500/portfolio-react'}
             />

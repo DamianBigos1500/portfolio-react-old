@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = ({}) => {
     >
       <Layout className="-mt-24">
         <div className="flex items-center justify-between w-full lg:flex-col">
-          <div className="w-1/2 pr-8 md:pr-0 lg:pb-12 md:pt-32 lg:w-3/4">
+          <div className="w-1/2 pr-8 md:pr-0 lg:pb-12 md:pt-32 lg:w-3/4 image-border">
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{
@@ -23,7 +23,7 @@ const Header: FC<HeaderProps> = ({}) => {
                 transition: { duration: 0.3, delay: 0.1 },
               }}
               viewport={{ once: true }}
-              src="https://wallup.net/wp-content/uploads/2017/03/15/82295-stars-forest-trees.jpg"
+              src="/Zrzut ekranu 2023-04-16 121011.png"
               alt=""
               className="w-full h-auto object-cover aspect-square rounded-3xl md:inline-block"
             />
@@ -32,9 +32,11 @@ const Header: FC<HeaderProps> = ({}) => {
           <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
             <AnimatedText
               className={
-                '!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
+                '!text-5xl !text-left xl:!text-4xl lg:!text-center lg:!text-5xl md:!text-4xl sm:!text-2xl'
               }
-              text={'Turning vision into reality with code and design.'}
+              text={
+                'I am always doing that which I cannot do, in order that I may learn how to do it.'
+              }
             />
             <motion.p
               initial={{ opacity: 0, x: 40 }}
@@ -46,9 +48,10 @@ const Header: FC<HeaderProps> = ({}) => {
               viewport={{ once: true }}
               className="my-4 text-base font-medium md:text-sm sm:text-xs"
             >
-              As a skilled full-stack developer, I am dedicated to turning ideas
-              into innovative web applications. Explore my latest projects and
-              articles, showcasing my expertise in React.js and web development.
+              I am currently second year applied mathematics student. I
+              fullstack developer. I am interested in web development analyzing
+              algorithms, I like using a mathematical approach to solving
+              problems. I like to deepen my knowledge and learn new things..
             </motion.p>
             <div className="flex items-center self-start mt-2 lg:self-center">
               <Link
