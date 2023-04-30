@@ -1,10 +1,8 @@
-import { FC, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import Logo from './Logo';
+import { FC, useState } from 'react';
 import Icons from './Icons';
 import { motion } from 'framer-motion';
 import useTheme from '../hooks/useTheme';
-import CustomLink, { CustomMobileLink } from './CustomLink';
+import CustomLink from './CustomLink';
 import MobileNavigation from './MobileNavigation';
 import { INavigationLink, navigationLinks } from '../data/navigationLinks';
 import { IIconLink, iconLinks } from '../data/iconLinks';

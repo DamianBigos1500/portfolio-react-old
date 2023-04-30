@@ -8,9 +8,8 @@ const Footer: FC<FooterProps> = ({}) => {
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
       <Layout className="py-8 flex items-center justify-between">
-        <span>Rights</span>
-        <Link to="/">Home</Link>
-        <Link to="/">Hello</Link>
+        <span>© 2023 Damian Bigos. All rights reserved.</span>
+        <span>Page made by Damian Bigos</span>
       </Layout>
     </footer>
   );

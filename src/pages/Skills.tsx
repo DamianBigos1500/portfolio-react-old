@@ -8,7 +8,7 @@ interface SkillsProps {}
 const Skills: FC<SkillsProps> = ({}) => {
   return (
     <section
-      id="school"
+      id="skills"
       className="w-full min-h-screen flex flex-col items-center justify-center"
     >
       <Layout className="mt-48">
